@@ -7,7 +7,7 @@
 SRC=$PWD/src
 
 cd "$SRC"
-mkdir -p x1 x2
+mkdir -p x1 x2 x3 x4
 cd "$SRC"/svg
 find . -name "*.svg" -type f -exec sh -c 'inkscape -z -e "../x1/${0%.svg}.png" -w 32 -h 32 $0' {} \;
 find . -name "*.svg" -type f -exec sh -c 'inkscape -z -e "../x2/${0%.svg}.png" -w 40 -h 40 $0' {} \;
