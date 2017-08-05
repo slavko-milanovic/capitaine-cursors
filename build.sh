@@ -10,7 +10,9 @@ cd "$SRC"
 mkdir -p x1 x2
 cd "$SRC"/svg
 find . -name "*.svg" -type f -exec sh -c 'inkscape -z -e "../x1/${0%.svg}.png" -w 32 -h 32 $0' {} \;
-find . -name "*.svg" -type f -exec sh -c 'inkscape -z -e "../x2/${0%.svg}.png" -w 64 -w 64 $0' {} \;
+find . -name "*.svg" -type f -exec sh -c 'inkscape -z -e "../x2/${0%.svg}.png" -w 40 -h 40 $0' {} \;
+find . -name "*.svg" -type f -exec sh -c 'inkscape -z -e "../x3/${0%.svg}.png" -w 48 -h 48 $0' {} \;
+find . -name "*.svg" -type f -exec sh -c 'inkscape -z -e "../x4/${0%.svg}.png" -w 64 -h 64 $0' {} \;
 
 cd $SRC
 
